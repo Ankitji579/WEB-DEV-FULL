@@ -50,3 +50,24 @@ body{
     color: white;
     margin-top:10px;
 }
+.sub-parent{
+    width: 50%;
+    background-color: #f76b6b;
+}
+.rem{
+    background-color: #f76b6b;
+    width: 500px;
+    height: 500px;
+    font-size: 50px;
+    margin: 10px;
+    border: 3px solid black;
+    padding: 10px;
+}
+#rem2{
+    background-color: #72a1e5;
+    height:2em;
+    width: 3em;
+    font-size: 2rem;
+    margin: 1vh;
+    padding: 2vw;
+}
