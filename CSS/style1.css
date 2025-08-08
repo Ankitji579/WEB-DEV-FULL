@@ -1,0 +1,18 @@
+p{
+    text-shadow: 1px 1px 2px red;
+    color: blue;
+}
+body{
+    background-color: beige;
+    font-family: Arial;
+}
+#unique-paragraph{
+    background-color: #b2ff59 !important;
+    text-shadow: 1px 1px 2px tan;
+    color: saddlebrown;
+}
+.para-green{
+    text-shadow: 1px 1px 2px yellow;
+    color: green;
+}
+
