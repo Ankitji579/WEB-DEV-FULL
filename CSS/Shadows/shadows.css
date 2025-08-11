@@ -1,0 +1,55 @@
+h1{
+    text-shadow: 3px 3px 3px red;
+}
+.new{
+    /*color: green;*/
+    text-shadow: 3px 3px 3px red, 5px 5px 5px blue;
+}
+.box{
+    background-image: linear-gradient(to bottom,red,white,blue);
+    width: 300px;
+    height: 200px;
+    box-shadow: -10px -10px 10px blue, 10px 10px 10px red;
+}
+.box1{
+    /*background-image: linear-gradient(to bottom,red,white,blue);*/
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 3px 3px 1px , -3px 3px 1px , 3px -3px 1px , -3px -3px 1px ;
+}
+.box2{
+    background-image: linear-gradient(to bottom,red,white,blue);
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    box-shadow:
+            3px 3px red,
+            -1em 0 0.4em olive;
+}
+.box3{
+    max-height: 100px;
+    max-width: 400px;
+    border: 3px solid black;
+    overflow: auto;
+}
+.box4{
+    min-height: 100px;
+    min-width: 400px;
+    border: 3px solid black;
+}
+.hello{
+    /*background-image: linear-gradient(to bottom,red,white,blue);*/
+    margin: 20px;
+    /*text-blink: var(1000ms);*/
+    width: 300px;
+    height: 200px;
+    box-shadow: 3px 3px 1px , -3px 3px 1px , 3px -3px 1px , -3px -3px 1px ;
+}
+.text{
+    margin: 20px;
+    /*text-blink: var(1000ms);*/
+    width: 300px;
+    height: 200px;
+    box-shadow: 3px 3px 1px , -3px 3px 1px , 3px -3px 1px , -3px -3px 1px ;
+}
