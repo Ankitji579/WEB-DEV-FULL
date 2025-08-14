@@ -25,6 +25,9 @@
     /*gap: 10px;*/
     /*align-content: flex-start;*/
     align-content: center;
+    align-items: center;
+
+    align-content:flex-start;
 
 
 }
@@ -33,4 +36,7 @@
     width: 200px;
     background-color: aqua;
 
+}
+#one{
+    order:1;
 }

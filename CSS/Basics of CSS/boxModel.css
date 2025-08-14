@@ -1,3 +1,6 @@
+body{
+    background-color: beige;
+}
 .box{
     /*background-color: beige;*/
     height: 200px;
@@ -16,9 +19,6 @@
 #b3{
     background-color: #6cff00;
     border: 3px solid blue;
-}
-body{
-    background-color: rgb(255, 255, 254);
 }
 .parent{
     border: 3px solid black;
