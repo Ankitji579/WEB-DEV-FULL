@@ -1,0 +1,201 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;  /* No need for relativity here as wrapper is already height for 100vh so it follows wrapper viewport height */
+    display: flex;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;   /* No need for z index here */
+}
+
+.background{
+    bottom:0;
+    transform:translateZ(-40px) scale(5);  /* according to perspective we have given */
+    /* scale: 5; */ /* this will behave differently won't align with 3d space */
+
+}
+
+.foreground{
+    transform:translateZ(-20px) scale(3);  /* according to perspective we have given */
+    /* scale: 3; */
+    /* transform: translateX(50%) translateZ(-20px) scale(3); */
+    /* width: auto;
+    height: auto; */
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+/* 
+h1{
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    font-size:10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: 5rem;
+    /* left:15%; */
+    /* letter-spacing: 4px; */
+/* } */
+
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    position: absolute;
+    top: 5rem;
+    font-size: 11rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+
+    /* Golden Gradient */
+    background: linear-gradient(90deg, #ffcc70, #ffb347, #ffd700, #ffae42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* 3D Shadow + Glow */
+    text-shadow: 
+        2px 2px 0px #8b5e00,
+        4px 4px 8px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(255, 215, 0, 0.6),
+        0 0 50px rgba(255, 180, 0, 0.4);
+
+    /* Run initial rise animation first, then wobble infinitely */
+    animation: glowRise 2.5s ease-out, funnyMove 3s ease-in-out infinite;
+}
+
+/* Initial rise + glow */
+@keyframes glowRise {
+    0% {
+        opacity: 0;
+        transform: translateY(80px) scale(0.8);
+        text-shadow: none;
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(0) scale(1.05);
+        text-shadow: 
+            2px 2px 0px #8b5e00,
+            4px 4px 8px rgba(0, 0, 0, 0.6),
+            0 0 40px rgba(255, 215, 0, 0.8),
+            0 0 80px rgba(255, 200, 0, 0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Continuous funny movement */
+@keyframes funnyMove {
+    0%   { transform: translateY(0) rotate(0deg); }
+    25%  { transform: translateY(-15px) rotate(-2deg); }
+    50%  { transform: translateY(5px) rotate(2deg); }
+    75%  { transform: translateY(-10px) rotate(-1deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+/* .desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size:3.5rem;
+    font-weight: 600;
+} */
+
+.desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Shape & Size */
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+
+    /* Background */
+    background: rgba(255, 255, 255, 0.15); /* glass effect */
+    backdrop-filter: blur(10px);
+
+    /* Text */
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+
+    /* Borders & Shadows */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    /* Animation hover effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.desc:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    letter-spacing: 5px;
+}
+
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+}

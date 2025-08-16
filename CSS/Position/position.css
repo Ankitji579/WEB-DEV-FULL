@@ -1,0 +1,38 @@
+body{
+    background-color: beige;
+}
+div{
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    border:1px solid black;
+}
+
+.wrapper{
+    height:2000px;
+    width:2000vw;
+    background-color: yellowgreen;
+}
+.box{
+    position: relative;
+    top:100px;
+    border-radius:100px;
+    text-align: center;
+    line-height: 100px;
+}
+.box1{
+    position:fixed;
+    top:300px;
+}
+.box3{
+    position: relative;
+    top:200px;
+    left: 50px;
+}
+.box4{
+    position: sticky;
+    top:0px;
+    left: 100px;
+
+}

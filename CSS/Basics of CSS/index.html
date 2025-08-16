@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+  <style>
+    #g-button{
+
+      background: linear-gradient(90deg, #f76b8a, #b2ff59, #64ffda, #72a1e5);
+      color: #1a1a1a;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover */
+    }
+
+    body{
+      font-family: Arial;
+    }
+    #intro-para{
+      background-color: aqua;
+      color: black;
+    }
+    #button{
+      background-color: black;
+      color:white;
+    }
+    button:hover{
+      background-color: red;
+      color: darkblue;
+    }
+    #buy-button:hover{
+      background: linear-gradient(45deg, #f76b8a, #b2ff59, #64ffda, #72a1e5);
+      color: #1a1a1a;
+      border-radius: 50px;
+      transform: scale(1.2);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    #g-button:hover{
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .green{
+      background-color: green;
+      color: aliceblue;
+    }
+    p{
+      background-color: bisque;
+      color:red;
+      /*font-size:larger;*/
+      font-size:smaller;
+    }
+    div{
+      background-color: darkblue;
+      color:yellow;
+    }
+    span{
+      background-color: black;
+      color:white;
+    }
+    h1{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Heading this way</h1>
+<!--  <h1>Heading this way</h1>-->
+  <p class="green">This line is in green</p>
+<div class="green"> this is second line(Also in green)</div>
+<span> this is third line</span>
+
+<p>Second Para</p>
+
+<button id="button">This is a Button</button>
+
+<p id="intro-para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolor dolore quisquam rerum, velit voluptatibus? Est iste labore neque voluptate.</p>
+
+<button>Simple Button</button>
+  <br>
+  <br>
+  <a href="http://google.com">
+    <button id="g-button">Google Me</button>
+  </a>
+  <br>
+  <br>
+<button id="buy-button">Buy Now</button>
+
+</body>
+</html>

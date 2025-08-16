@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows:auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer"
+    ;
+}
+nav{
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    background-color: blue;
+    color: whitesmoke;
+    padding: 1em;
+}
+aside{
+    height: calc(100vh - 50.5px);
+    top: 50.5px;
+    position: sticky;
+    align-self: self-start;
+    grid-area: sidebar;
+    padding: 1em;
+    background-color: greenyellow;
+}
+main{
+    grid-area: main;
+    padding: 1em;
+
+}
+footer{
+    grid-area: footer;
+    padding: 2em;
+
+}
