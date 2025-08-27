@@ -18,6 +18,12 @@
     /* justify-content: center;
     justify-content: space-evenly; */
 
+    /* align-items: end;
+    align-items: center;
+    align-items: flex-end; */
+    /* align-items: baseline; */
+
+
 }
 .box{
     background-color: aqua;
