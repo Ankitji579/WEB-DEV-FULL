@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     box-sizing: border-box;
 }
 .container{
@@ -14,8 +14,9 @@
     grid-template-columns: repeat(3,1fr);
     /* grid-template-rows: 90px 90px 90px 90px; */
     grid-template-rows: repeat(3,1fr);
-
     gap: 15px;
+    /* justify-content: center;
+    justify-content: space-evenly; */
 
 }
 .box{
